@@ -1,0 +1,16 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Selected proposed-versus-control tests on 200 chips. CG: common-gain CLAHE; HG: HGPSO. Holm correction covers seven controls separately per metric. Positive oriented rank-biserial effect $r$ favors SRP.}
+\label{tab:stats}\begin{tabular}{@{}llrr@{}}\toprule
+Control & Metric & Adjusted $p$ & $r$ \\\midrule
+CG & Contrast & $1.11\times10^{-30}$ & $+0.952$ \\
+CG & Input SSIM & $9.50\times10^{-27}$ & $-0.888$ \\
+CG & NDVI MAE & $0.7427$ & $-0.027$ \\
+CG & NDWI MAE & $0.7189$ & $-0.029$ \\
+CG & SAM & $0.2705$ & $+0.165$ \\
+CG & Time & $1.01\times10^{-33}$ & $-1.000$ \\
+HG & Contrast & $1.0000$ & $+0.054$ \\
+HG & NDVI MAE & $1.01\times10^{-33}$ & $+1.000$ \\
+HG & NDWI MAE & $1.01\times10^{-33}$ & $+1.000$ \\
+HG & SAM & $1.01\times10^{-33}$ & $+1.000$ \\
+HG & Time & $9.88\times10^{-27}$ & $+0.878$ \\
+\bottomrule\end{tabular}\end{table}

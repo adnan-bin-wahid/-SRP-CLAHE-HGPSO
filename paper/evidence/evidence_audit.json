@@ -1,0 +1,94 @@
+{
+  "source_run": "E:\\IIT\\8th_semester\\image\\SRP_CLAHE_HGPSO_Paper_Experiment_Suite_v1_2\\SRP_CLAHE_HGPSO_Paper_Experiment_Suite_v1_2\\results\\standard_run",
+  "source_hashes_sha256": {
+    "raw\\per_image_metrics.csv": "cf67d6767ab0cf9a24e335a7a0b534f2aec0394534992beb785660d3b028c581",
+    "raw\\ablation_per_image.csv": "e2006e3769548ec8379cd93511b381f1801059146507e5924528e0478ed0ec2d",
+    "raw\\stability_per_run.csv": "8f1834d4937302fc43873e672646948fddb7764e9809d4e2bb6d9811bde596ba",
+    "raw\\synthetic_paired_per_image.csv": "1db57fa9a88e92ad052d08d14edd8778f7e252ae495f011c16a209f5b46a75cf",
+    "manifest\\run_manifest.json": "413b712c47e765d176e3efa9e96dc473cf7268929adfa16229e617031deb3f2b",
+    "manifest\\FROZEN_TEST_CONFIG.yaml": "8c84cb27c91edbc96c1fe1f965a0c0232785c749619aca6450e4e955743889b9",
+    "manifest\\dataset_validation.csv": "9536c429735947def4c41d0ed38e2a9ef85a3c99552064fc1c55750bf92b4fdf",
+    "tables\\main_results_summary.csv": "81a368284f6f5903ba57996aed23f65103447b34b18a996f340b4e4984f5705d",
+    "tables\\wilcoxon_holm_pairwise.csv": "f2671d30ae65f4245de0db2fd7a1d099f774795aebc4231a118b0787fa7dbf3c",
+    "tables\\validation_selection_per_run.csv": "5c82ffbc48515a65fddb1bffe647b012783d93bd39ff3f46b3330e1ff74088de"
+  },
+  "main_rows": 1800,
+  "test_chips": 200,
+  "methods": [
+    "AGCWD",
+    "CLAHE",
+    "CommonGain_CLAHE",
+    "GWO_Transform",
+    "HE",
+    "Original",
+    "PSO_Transform",
+    "Parent_HGPSO_Reproduction",
+    "SRP_CLAHE_HGPSO"
+  ],
+  "calibration_chips_used": 6,
+  "calibration_evaluations": 54,
+  "validation_chips_available": 40,
+  "ablation_chips": 8,
+  "ablation_variants": 20,
+  "stability_chips": 8,
+  "stability_seeds": 3,
+  "synthetic_chips": 12,
+  "test_location_date_groups": 50,
+  "validation_location_date_groups": 13,
+  "location_date_split_overlap": [],
+  "location_split_overlap": [],
+  "feasible_test_chips": 190,
+  "infeasible_test_chips": 10,
+  "threshold_exceedances": {
+    "ndvi_mae": 0,
+    "ndwi_mae": 0,
+    "sam_mean_deg": 0,
+    "clip_fraction": 10
+  },
+  "max_effect_size_change_exact_ties": 0.019203980099502447,
+  "max_adjusted_p_change": 9.942133921692076e-17,
+  "holm_decision_changes": 0,
+  "ratio_of_means_comparisons": {
+    "Original": {
+      "contrast_change_pct_ratio_of_means": 165.8475659113671,
+      "runtime_change_pct_ratio_of_means": 3336.151409946094
+    },
+    "CLAHE": {
+      "contrast_change_pct_ratio_of_means": 30.221946655592504,
+      "runtime_change_pct_ratio_of_means": 1745.2699891206414
+    },
+    "CommonGain_CLAHE": {
+      "contrast_change_pct_ratio_of_means": 33.38024917213242,
+      "runtime_change_pct_ratio_of_means": 1758.315192212354
+    },
+    "Parent_HGPSO_Reproduction": {
+      "contrast_change_pct_ratio_of_means": 2.89186983637304,
+      "runtime_change_pct_ratio_of_means": -28.19083031759787
+    }
+  },
+  "main_convergence": {
+    "GWO_Transform": {
+      "chips": 200,
+      "observed_horizon": 20
+    },
+    "PSO_Transform": {
+      "chips": 200,
+      "observed_horizon": 20
+    },
+    "Parent_HGPSO_Reproduction": {
+      "chips": 200,
+      "observed_horizon": 20
+    },
+    "SRP_CLAHE_HGPSO": {
+      "chips": 200,
+      "observed_horizon": 12
+    }
+  },
+  "notes": [
+    "Group-level tests are post hoc sensitivity analyses using location and acquisition time as a proxy for source scene.",
+    "Audited ranks use SciPy exact-equality ties; archived effects use numpy.isclose tie grouping.",
+    "Runtime measurements exclude scene loading and preprocessing context preparation; they include candidate metric evaluation.",
+    "Clip fraction counts clipped band samples over four times the number of valid pixels, not unique pixels.",
+    "No enhancement experiment or input evidence file is modified by this audit."
+  ]
+}

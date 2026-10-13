@@ -1,0 +1,50 @@
+[F] .gitignore
+[F] CHANGELOG.md
+[F] CITATION.cff
+[F] LICENSE
+[F] README.md
+[F] RUN_FIRST_CHECK.bat
+[F] RUN_PAPER_FULL.bat
+[F] RUN_PAPER_PRACTICAL.bat
+[F] RUN_STANDARD_EXPERIMENT.bat
+[F] RUN_STANDARD_EXPERIMENT.ps1
+[D] configs
+  [F] paper.yaml
+  [F] quick.yaml
+[D] data
+  [F] PUT_DATASET_HERE.txt
+[D] docs
+  [F] METHOD_MAPPING.md
+  [F] PAPER_DRAFT_SOURCE_NOTE.md
+  [F] PUBLISHING_WORKFLOW.md
+  [F] RESEARCH_INTEGRITY.md
+  [F] TROUBLESHOOTING.md
+  [F] VERIFIED_RUN.md
+[F] requirements.txt
+[D] results
+  [F] .gitkeep
+[D] scripts
+  [F] make_demo_dataset.py
+  [F] run_full_experiment.py
+  [F] run_quick_check.py
+  [F] validate_dataset.py
+  [F] verify_install.py
+[D] src
+  [F] __init__.py
+  [F] config.py
+  [F] dataset.py
+  [F] experiment.py
+  [F] image_ops.py
+  [F] io.py
+  [F] methods.py
+  [F] metrics.py
+  [F] optimizers.py
+  [F] reporting.py
+  [F] stats.py
+  [F] synthetic.py
+  [F] utils.py
+[D] tests
+  [F] conftest.py
+  [F] test_io_and_method.py
+  [F] test_optimizer_smoke.py
+  [F] test_spectral_invariance.py

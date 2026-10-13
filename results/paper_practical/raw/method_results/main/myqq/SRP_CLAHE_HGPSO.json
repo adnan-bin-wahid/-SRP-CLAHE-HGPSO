@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "myqq",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Macapa",
+    "datetime": "2020-09-10T13:52:40Z",
+    "cloud_fraction": 0.00395965576171875,
+    "valid_fraction": 0.9960403442382812,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 6.872813999973005,
+    "peak_rss_mb": 183.07421875,
+    "evaluations_proxy": 160,
+    "evaluations_full": 10,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.7072107332344285,
+    "notes": "",
+    "entropy": 6.394789671651499,
+    "local_rms_contrast": 0.35382115840911865,
+    "edge_density": 0.3787159238010616,
+    "laplacian_variance": 95651.5625,
+    "ssim_to_input": 0.32837623357772827,
+    "mse_to_input": 0.15902189910411835,
+    "psnr_to_input_db": 7.985430643261855,
+    "brightness_mean": 0.4986078441143036,
+    "ndvi_mae": 1.0386539628370883e-07,
+    "ndvi_rmse": 1.0592530088615604e-05,
+    "ndvi_corr": 0.9999999996214815,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 1.8437887661093555e-07,
+    "ndwi_rmse": 2.5073661163332872e-05,
+    "ndwi_corr": 0.9999999969038675,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 5.999184395477641e-06,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 1.1489586604673964e-05,
+    "param_a": 0.6740544336583362,
+    "param_b": 0.10115068730095755,
+    "param_c": 1.0,
+    "param_k": 0.75834707275258,
+    "param_p": 0.46451320909508326,
+    "pixel_equivalent_evaluations": 50.0
+  },
+  "parameters": {
+    "a": 0.6740544336583362,
+    "b": 0.10115068730095755,
+    "c": 1.0,
+    "k": 0.75834707275258,
+    "p": 0.46451320909508326
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.7983961202286091,
+      "best_stable_utility": 0.7588554943330902,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8017978083957642,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.751340567652808,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.7043628558659956,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.7698223580219995,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.7166455849085186,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.7551887144375684,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.6678516426198439,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.7376670603329618,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.8092903568313881,
+      "best_stable_utility": 0.7608875734097433,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

@@ -1,0 +1,892 @@
+<html><head><meta charset='utf-8'><style>body{font-family:Arial,sans-serif;max-width:1200px;margin:40px auto;line-height:1.45}table{border-collapse:collapse;font-size:12px}th,td{border:1px solid #ccc;padding:5px}code,pre{background:#f5f5f5;padding:4px;overflow:auto}</style></head><body><h1>SRP-CLAHE-HGPSO Execution Report</h1><p><b>Measured run output only.</b> Read EXECUTION_REPORT.md for interpretation guardrails.</p><h2>Main results</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>n</th>
+      <th>entropy</th>
+      <th>local_rms_contrast</th>
+      <th>ssim_to_input</th>
+      <th>ndvi_mae</th>
+      <th>ndwi_mae</th>
+      <th>sam_mean_deg</th>
+      <th>clip_fraction</th>
+      <th>runtime_sec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>6.7247 ± 1.3434</td>
+      <td>0.1005 ± 0.0468</td>
+      <td>0.5267 ± 0.2017</td>
+      <td>1.266e-01 ± 4.81e-02</td>
+      <td>1.265e-01 ± 4.79e-02</td>
+      <td>6.8120 ± 2.9435</td>
+      <td>7.180e-03 ± 5.07e-02</td>
+      <td>0.1296 ± 0.0302</td>
+    </tr>
+    <tr>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>7.2259 ± 0.5935</td>
+      <td>0.1713 ± 0.0782</td>
+      <td>0.5357 ± 0.1372</td>
+      <td>1.284e-01 ± 4.79e-02</td>
+      <td>1.301e-01 ± 4.94e-02</td>
+      <td>7.0572 ± 3.0391</td>
+      <td>4.953e-03 ± 2.26e-02</td>
+      <td>0.1520 ± 0.0348</td>
+    </tr>
+    <tr>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>7.2565 ± 0.6014</td>
+      <td>0.1672 ± 0.0799</td>
+      <td>0.5484 ± 0.1422</td>
+      <td>4.142e-05 ± 2.98e-04</td>
+      <td>9.619e-05 ± 7.16e-04</td>
+      <td>0.0115 ± 0.1002</td>
+      <td>2.885e-03 ± 2.19e-02</td>
+      <td>0.1509 ± 0.0367</td>
+    </tr>
+    <tr>
+      <td>GWO</td>
+      <td>200</td>
+      <td>7.2719 ± 0.5061</td>
+      <td>0.2205 ± 0.0819</td>
+      <td>0.4183 ± 0.1300</td>
+      <td>1.556e-01 ± 8.62e-02</td>
+      <td>1.574e-01 ± 8.92e-02</td>
+      <td>8.4825 ± 5.0318</td>
+      <td>3.548e-03 ± 1.48e-02</td>
+      <td>3.6149 ± 1.2673</td>
+    </tr>
+    <tr>
+      <td>HE</td>
+      <td>200</td>
+      <td>6.8458 ± 0.8177</td>
+      <td>0.1498 ± 0.0717</td>
+      <td>0.4990 ± 0.2149</td>
+      <td>1.641e-01 ± 1.21e-01</td>
+      <td>1.645e-01 ± 1.25e-01</td>
+      <td>8.8581 ± 6.6294</td>
+      <td>2.977e-03 ± 1.96e-02</td>
+      <td>0.1265 ± 0.0280</td>
+    </tr>
+    <tr>
+      <td>Original</td>
+      <td>200</td>
+      <td>7.4448 ± 0.4701</td>
+      <td>0.0839 ± 0.0423</td>
+      <td>1.0000 ± 0.0000</td>
+      <td>0.000e+00 ± 0.00e+00</td>
+      <td>0.000e+00 ± 0.00e+00</td>
+      <td>0.0000 ± 0.0000</td>
+      <td>0.000e+00 ± 0.00e+00</td>
+      <td>0.0816 ± 0.0182</td>
+    </tr>
+    <tr>
+      <td>PSO</td>
+      <td>200</td>
+      <td>7.3159 ± 0.4813</td>
+      <td>0.2117 ± 0.0856</td>
+      <td>0.4385 ± 0.1232</td>
+      <td>1.486e-01 ± 8.71e-02</td>
+      <td>1.505e-01 ± 9.20e-02</td>
+      <td>8.1494 ± 5.1467</td>
+      <td>3.333e-03 ± 1.55e-02</td>
+      <td>5.0318 ± 1.5641</td>
+    </tr>
+    <tr>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>7.3120 ± 0.5140</td>
+      <td>0.2168 ± 0.0824</td>
+      <td>0.4255 ± 0.1286</td>
+      <td>1.505e-01 ± 7.50e-02</td>
+      <td>1.523e-01 ± 7.67e-02</td>
+      <td>8.2245 ± 4.3211</td>
+      <td>3.316e-03 ± 1.50e-02</td>
+      <td>3.9063 ± 1.4812</td>
+    </tr>
+    <tr>
+      <td>Proposed SRP-HGPSO</td>
+      <td>200</td>
+      <td>7.2264 ± 0.5999</td>
+      <td>0.2231 ± 0.0941</td>
+      <td>0.4292 ± 0.1260</td>
+      <td>1.948e-05 ± 9.94e-05</td>
+      <td>5.267e-05 ± 3.29e-04</td>
+      <td>0.0053 ± 0.0374</td>
+      <td>1.391e-03 ± 8.34e-03</td>
+      <td>2.8051 ± 0.7788</td>
+    </tr>
+  </tbody>
+</table><h2>Friedman tests</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>metric</th>
+      <th>n</th>
+      <th>methods</th>
+      <th>friedman_stat</th>
+      <th>p_value</th>
+      <th>significant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>entropy</td>
+      <td>200</td>
+      <td>8</td>
+      <td>201.674684</td>
+      <td>5.071879e-40</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>200</td>
+      <td>8</td>
+      <td>805.201715</td>
+      <td>1.399517e-169</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>200</td>
+      <td>8</td>
+      <td>306.447964</td>
+      <td>2.538096e-62</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>200</td>
+      <td>8</td>
+      <td>839.451667</td>
+      <td>5.673003e-177</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>200</td>
+      <td>8</td>
+      <td>845.238333</td>
+      <td>3.196652e-178</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>200</td>
+      <td>8</td>
+      <td>863.897653</td>
+      <td>2.995903e-182</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>200</td>
+      <td>8</td>
+      <td>331.974964</td>
+      <td>8.865749e-68</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>200</td>
+      <td>8</td>
+      <td>1287.515000</td>
+      <td>8.348084e-274</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><h2>Wilcoxon + Holm</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>metric</th>
+      <th>proposed</th>
+      <th>baseline</th>
+      <th>n</th>
+      <th>wilcoxon_stat</th>
+      <th>p_value</th>
+      <th>rank_biserial</th>
+      <th>median_oriented_difference</th>
+      <th>p_holm</th>
+      <th>significant_holm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>4681.0</td>
+      <td>5.711720e-11</td>
+      <td>0.534229</td>
+      <td>1.535912e-01</td>
+      <td>3.427032e-10</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>9374.0</td>
+      <td>4.094652e-01</td>
+      <td>0.067264</td>
+      <td>1.915390e-02</td>
+      <td>8.189305e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>9106.0</td>
+      <td>2.493866e-01</td>
+      <td>-0.093930</td>
+      <td>-2.311318e-02</td>
+      <td>7.481597e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>9889.0</td>
+      <td>8.442600e-01</td>
+      <td>-0.016020</td>
+      <td>1.201325e-02</td>
+      <td>8.442600e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>3722.0</td>
+      <td>1.152062e-14</td>
+      <td>0.629652</td>
+      <td>2.671375e-01</td>
+      <td>8.064433e-14</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>8141.0</td>
+      <td>1.984292e-02</td>
+      <td>-0.189950</td>
+      <td>-1.298493e-02</td>
+      <td>9.921460e-02</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>entropy</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>8329.0</td>
+      <td>3.573651e-02</td>
+      <td>-0.171244</td>
+      <td>-1.700911e-02</td>
+      <td>1.429460e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>47.0</td>
+      <td>2.910101e-34</td>
+      <td>0.995323</td>
+      <td>1.252918e-01</td>
+      <td>2.037071e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>662.0</td>
+      <td>2.220717e-30</td>
+      <td>0.934129</td>
+      <td>4.863591e-02</td>
+      <td>1.110359e-29</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>487.0</td>
+      <td>1.846774e-31</td>
+      <td>0.951542</td>
+      <td>5.244785e-02</td>
+      <td>1.108065e-30</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>9883.0</td>
+      <td>8.385345e-01</td>
+      <td>-0.016617</td>
+      <td>-1.614399e-03</td>
+      <td>1.000000e+00</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>797.0</td>
+      <td>1.466446e-29</td>
+      <td>0.920697</td>
+      <td>7.695086e-02</td>
+      <td>5.865783e-29</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>6835.0</td>
+      <td>8.750868e-05</td>
+      <td>0.319900</td>
+      <td>5.557772e-03</td>
+      <td>2.625260e-04</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>local_rms_contrast</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>9509.0</td>
+      <td>5.091819e-01</td>
+      <td>0.053881</td>
+      <td>-7.214695e-04</td>
+      <td>1.000000e+00</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>4304.0</td>
+      <td>2.364552e-12</td>
+      <td>-0.571741</td>
+      <td>-9.930888e-02</td>
+      <td>1.182276e-11</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>1468.0</td>
+      <td>1.167771e-25</td>
+      <td>-0.853930</td>
+      <td>-9.515154e-02</td>
+      <td>7.006624e-25</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>1129.0</td>
+      <td>1.356926e-27</td>
+      <td>-0.887662</td>
+      <td>-1.044648e-01</td>
+      <td>9.498485e-27</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>9962.0</td>
+      <td>9.144915e-01</td>
+      <td>0.008756</td>
+      <td>-3.196843e-03</td>
+      <td>9.144915e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>5774.0</td>
+      <td>1.814054e-07</td>
+      <td>-0.425473</td>
+      <td>-6.905322e-02</td>
+      <td>7.256217e-07</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>6947.0</td>
+      <td>1.529759e-04</td>
+      <td>-0.308756</td>
+      <td>-1.444970e-02</td>
+      <td>4.589277e-04</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ssim_to_input</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>9178.0</td>
+      <td>2.873340e-01</td>
+      <td>-0.086766</td>
+      <td>-2.067327e-03</td>
+      <td>5.746679e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.204942e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.241221e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>9781.0</td>
+      <td>7.427410e-01</td>
+      <td>-0.045970</td>
+      <td>4.023004e-12</td>
+      <td>7.427410e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.389600e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.310087e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.364351e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndvi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.363036e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.171358e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.196723e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>9755.0</td>
+      <td>7.188844e-01</td>
+      <td>-0.044677</td>
+      <td>1.181810e-11</td>
+      <td>7.188844e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.385986e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.282232e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.347258e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ndwi_mae</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>1.352258e-01</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>6.651638e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>6.894395e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>739.0</td>
+      <td>2.704597e-01</td>
+      <td>0.164972</td>
+      <td>0.000000e+00</td>
+      <td>2.704597e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>7.649643e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>7.022467e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>7.543803e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>sam_mean_deg</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>1.000000</td>
+      <td>7.602980e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>759.0</td>
+      <td>1.803738e-01</td>
+      <td>-0.197779</td>
+      <td>0.000000e+00</td>
+      <td>5.136204e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>734.0</td>
+      <td>2.479429e-17</td>
+      <td>0.840087</td>
+      <td>1.018823e-04</td>
+      <td>1.735600e-16</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>683.0</td>
+      <td>3.482011e-01</td>
+      <td>0.143484</td>
+      <td>0.000000e+00</td>
+      <td>5.136204e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>968.0</td>
+      <td>6.735880e-16</td>
+      <td>0.795197</td>
+      <td>4.715280e-05</td>
+      <td>4.041528e-15</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>755.0</td>
+      <td>1.712068e-01</td>
+      <td>-0.202010</td>
+      <td>0.000000e+00</td>
+      <td>5.136204e-01</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>988.0</td>
+      <td>4.179286e-15</td>
+      <td>0.781647</td>
+      <td>2.971737e-05</td>
+      <td>2.089643e-14</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>clip_fraction</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>1151.0</td>
+      <td>2.580046e-14</td>
+      <td>0.752898</td>
+      <td>1.430511e-05</td>
+      <td>1.032018e-13</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>AGCWD</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>-1.000000</td>
+      <td>-2.210330e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>CLAHE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>-1.000000</td>
+      <td>-2.190117e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>Common gain + CLAHE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>-1.000000</td>
+      <td>-2.194938e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>GWO</td>
+      <td>200</td>
+      <td>2228.0</td>
+      <td>1.372003e-21</td>
+      <td>0.778308</td>
+      <td>6.771794e-01</td>
+      <td>1.372003e-21</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HE</td>
+      <td>200</td>
+      <td>0.0</td>
+      <td>1.436146e-34</td>
+      <td>-1.000000</td>
+      <td>-2.212891e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>PSO</td>
+      <td>200</td>
+      <td>7.0</td>
+      <td>1.595764e-34</td>
+      <td>0.999303</td>
+      <td>1.917262e+00</td>
+      <td>1.005302e-33</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>runtime_sec</td>
+      <td>Proposed SRP-HGPSO</td>
+      <td>HGPSO</td>
+      <td>200</td>
+      <td>1226.0</td>
+      <td>4.939671e-27</td>
+      <td>0.878010</td>
+      <td>8.596094e-01</td>
+      <td>9.879342e-27</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><h2>Warnings</h2><pre>- No automatic protocol warning was triggered.</pre><h3>boxplot_entropy</h3><img src='../figures/boxplot_entropy.png' style='max-width:100%'><h3>boxplot_local_rms_contrast</h3><img src='../figures/boxplot_local_rms_contrast.png' style='max-width:100%'><h3>boxplot_ndvi_mae</h3><img src='../figures/boxplot_ndvi_mae.png' style='max-width:100%'><h3>boxplot_ndwi_mae</h3><img src='../figures/boxplot_ndwi_mae.png' style='max-width:100%'><h3>boxplot_runtime_sec</h3><img src='../figures/boxplot_runtime_sec.png' style='max-width:100%'><h3>boxplot_sam_mean_deg</h3><img src='../figures/boxplot_sam_mean_deg.png' style='max-width:100%'><h3>convergence_median</h3><img src='../figures/convergence_median.png' style='max-width:100%'><h3>quality_cost_tradeoff</h3><img src='../figures/quality_cost_tradeoff.png' style='max-width:100%'><h3>visual_spectral_tradeoff</h3><img src='../figures/visual_spectral_tradeoff.png' style='max-width:100%'></body></html>

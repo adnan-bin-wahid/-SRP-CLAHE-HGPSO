@@ -1,0 +1,24 @@
+\begin{tikzpicture}[
+  box/.style={draw,rectangle,rounded corners=1pt,align=center,
+    text width=1.75in,minimum height=0.43in,font=\footnotesize,
+    inner sep=4pt,fill=white},
+  flow/.style={-{Latex[length=2mm]},semithick}]
+\node[box] (cube) at (0,0) {Four-band input\\Valid clear-pixel mask};
+\node[box] (display) at (2.35in,0) {Original-fitted display\\RGB to HSV value};
+\node[box] (clahe) at (4.70in,0) {CLAHE and cached\\local statistics};
+\node[box] (search) at (0,-0.72in) {Bounded hybrid search\\PSO then GWO};
+\node[box] (gain) at (2.35in,-0.72in) {Candidate value transform\\Shared four-band gain};
+\node[box] (check) at (4.70in,-0.72in) {Proxy visual score\\and spectral constraints};
+\node[box] (elite) at (0,-1.44in) {Distinct elite candidates\\Full-resolution evaluation};
+\node[box] (select) at (2.35in,-1.44in) {Feasibility-first selection\\or least-violating elite};
+\node[box] (output) at (4.70in,-1.44in) {Enhanced cube\\Metrics and diagnostics};
+\draw[flow] (cube) -- (display);
+\draw[flow] (display) -- (clahe);
+\draw[flow] (clahe.south) -- ++(0,-0.13in) -| (search.north);
+\draw[flow] (search) -- (gain);
+\draw[flow] (gain) -- (check);
+\draw[flow] (check.south) -- ++(0,-0.13in) -| ([xshift=0.45in]search.south);
+\draw[flow] (search.south) -- (elite.north);
+\draw[flow] (elite) -- (select);
+\draw[flow] (select) -- (output);
+\end{tikzpicture}

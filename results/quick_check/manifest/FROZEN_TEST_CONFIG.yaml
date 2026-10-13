@@ -1,0 +1,206 @@
+project:
+  name: SRP-CLAHE-HGPSO
+  base_seed: 20260817
+  reflectance_scale: auto
+  max_workers: 2
+  save_all_enhanced_images: false
+  qualitative_scene_count: 8
+input:
+  required_bands:
+  - B02
+  - B03
+  - B04
+  - B08
+  cloud_mask_name: cloud_mask.tif
+  cloud_values:
+  - 1
+  - 255
+  min_valid_fraction: 0.7
+preprocessing:
+  display_percentiles:
+  - 2.0
+  - 98.0
+  clahe_clip_limit: 0.01
+  clahe_tile_grid:
+  - 8
+  - 8
+  local_window: 15
+  transform_g: 1.0
+  transform_l: 1.0
+  transform_rescale_percentiles:
+  - 1.0
+  - 99.0
+  epsilon: 0.0001
+  gain_min: 0.5
+  gain_max: 1.5
+  gain_sigma: 0.0
+  baseline_gain_min: 0.05
+  baseline_gain_max: 20.0
+bounds:
+  a:
+  - 0.1
+  - 1.5
+  b:
+  - 0.1
+  - 0.5
+  c:
+  - 0.1
+  - 1.0
+  k:
+  - 0.5
+  - 1.5
+  p:
+  - 0.1
+  - 2.0
+objective:
+  weights:
+    entropy: 0.25
+    contrast: 0.25
+    edge: 0.2
+    sharpness: 0.15
+    ssim: 0.15
+  thresholds:
+    ndvi_mae: 0.005
+    ndwi_mae: 0.005
+    sam_mean_deg: 0.5
+    clip_fraction: 0.005
+optimizer:
+  pso_w: 0.729
+  pso_c1: 1.49445
+  pso_c2: 1.49445
+  early_stop_patience: 8
+  early_stop_tolerance: 0.0001
+  gwo_blend: 1.0
+presets:
+  quick:
+    proposed_population: 5
+    proposed_generations: 4
+    proposed_proxy_size: 128
+    proposed_elites: 2
+    baseline_population: 5
+    baseline_generations: 4
+    baseline_proxy_size: 128
+    validation_scenes: 2
+    ablation_scenes: 2
+    stability_scenes: 2
+    stability_seeds: 2
+    synthetic_scenes: 2
+  standard:
+    proposed_population: 8
+    proposed_generations: 12
+    proposed_proxy_size: 256
+    proposed_elites: 4
+    baseline_population: 10
+    baseline_generations: 20
+    baseline_proxy_size: 256
+    validation_scenes: 6
+    ablation_scenes: 8
+    stability_scenes: 8
+    stability_seeds: 3
+    synthetic_scenes: 12
+  paper_practical:
+    proposed_population: 16
+    proposed_generations: 50
+    proposed_proxy_size: 256
+    proposed_elites: 10
+    baseline_population: 16
+    baseline_generations: 50
+    baseline_proxy_size: 512
+    validation_scenes: 8
+    ablation_scenes: 16
+    stability_scenes: 20
+    stability_seeds: 5
+    synthetic_scenes: 24
+  paper_full:
+    proposed_population: 16
+    proposed_generations: 50
+    proposed_proxy_size: 256
+    proposed_elites: 10
+    baseline_population: 30
+    baseline_generations: 100
+    baseline_proxy_size: 512
+    validation_scenes: 8
+    ablation_scenes: 24
+    stability_scenes: 25
+    stability_seeds: 10
+    synthetic_scenes: 30
+methods:
+  main:
+  - Original
+  - HE
+  - CLAHE
+  - AGCWD
+  - CommonGain_CLAHE
+  - PSO_Transform
+  - GWO_Transform
+  - Parent_HGPSO_Reproduction
+  - SRP_CLAHE_HGPSO
+ablation:
+  gain_sigma:
+  - 0.0
+  - 0.5
+  - 1.0
+  - 2.0
+  gain_bounds:
+  - - 0.4
+    - 2.5
+  - - 0.5
+    - 2.0
+  - - 0.7
+    - 1.5
+  proxy_size:
+  - 128
+  - 256
+  - 512
+  local_window:
+  - 7
+  - 15
+  - 31
+  search_budget:
+  - - 8
+    - 20
+  - - 12
+    - 30
+  - - 16
+    - 50
+  - - 30
+    - 100
+  objective_weights:
+    default:
+    - 0.25
+    - 0.25
+    - 0.2
+    - 0.15
+    - 0.15
+    entropy_emphasis:
+    - 0.35
+    - 0.2
+    - 0.15
+    - 0.1
+    - 0.2
+    contrast_emphasis:
+    - 0.2
+    - 0.35
+    - 0.15
+    - 0.1
+    - 0.2
+    structure_emphasis:
+    - 0.15
+    - 0.2
+    - 0.15
+    - 0.1
+    - 0.4
+reporting:
+  primary_metrics:
+  - entropy
+  - local_rms_contrast
+  - ssim_to_input
+  - ndvi_mae
+  - ndwi_mae
+  - sam_mean_deg
+  - clip_fraction
+  - runtime_sec
+  alpha: 0.05
+  create_html: true
+  create_markdown: true
+  package_results_zip: true

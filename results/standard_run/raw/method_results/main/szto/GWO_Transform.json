@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "szto",
+    "method": "GWO_Transform",
+    "split": "test",
+    "location": "Timbuktu",
+    "datetime": "2019-09-20T10:56:32Z",
+    "cloud_fraction": 0.0,
+    "valid_fraction": 0.9979629516601562,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 2.136981800002104,
+    "peak_rss_mb": 240.6328125,
+    "evaluations_proxy": 100,
+    "evaluations_full": 1,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": null,
+    "violation": null,
+    "stable_visual_utility": 0.822357425120312,
+    "notes": "",
+    "entropy": 7.504790036063943,
+    "local_rms_contrast": 0.1147330179810524,
+    "edge_density": 0.2951378005427927,
+    "laplacian_variance": 7516.296875,
+    "ssim_to_input": 0.6286612749099731,
+    "mse_to_input": 0.0847645103931427,
+    "psnr_to_input_db": 10.717859421602,
+    "brightness_mean": 0.6181472539901733,
+    "ndvi_mae": 0.10301078855991364,
+    "ndvi_rmse": 0.19906003773212433,
+    "ndvi_corr": -0.25049453280559564,
+    "ndvi_sign_flip_fraction": 0.08096785291082145,
+    "ndwi_mae": 0.10092788189649582,
+    "ndwi_rmse": 0.19758108258247375,
+    "ndwi_corr": -0.3122895447926034,
+    "ndwi_sign_flip_fraction": 0.06307862849279462,
+    "sam_mean_deg": 5.731241226196289,
+    "sam_median_deg": 2.510779857635498,
+    "sam_p95_deg": 28.79146385192871,
+    "clip_fraction": 0.01108042506020412,
+    "param_a": 1.4580352340277025,
+    "param_b": 0.5,
+    "param_c": 0.6292705629653991,
+    "param_k": 1.5,
+    "param_p": 0.5895454891987656,
+    "pixel_equivalent_evaluations": 26.0
+  },
+  "parameters": {
+    "a": 1.4580352340277025,
+    "b": 0.5,
+    "c": 0.6292705629653991,
+    "k": 1.5,
+    "p": 0.5895454891987656
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.8631402150778299,
+      "best_stable_utility": 0.8057943583765431,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8718194623134294,
+      "best_stable_utility": 0.8196148834618304,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.7040891271839437,
+      "best_stable_utility": 0.8196148834618304,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.6612958677840828,
+      "best_stable_utility": 0.8196148834618304,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.6710708176615432,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.7601621242770483,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.7397537362523137,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.7299351224805104,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.658362257827502,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.6817900210006946,
+      "best_stable_utility": 0.8196488519809654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

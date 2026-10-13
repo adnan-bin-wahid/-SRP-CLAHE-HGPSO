@@ -1,0 +1,210 @@
+{
+  "record": {
+    "chip_id": "vqfw",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Madagascar",
+    "datetime": "2020-09-12T07:03:53Z",
+    "cloud_fraction": 0.0,
+    "valid_fraction": 1.0,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 7.063931400014553,
+    "peak_rss_mb": 196.5703125,
+    "evaluations_proxy": 304,
+    "evaluations_full": 10,
+    "iterations_run": 19,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.7643469978812671,
+    "notes": "",
+    "entropy": 7.501537077376193,
+    "local_rms_contrast": 0.32539212703704834,
+    "edge_density": 0.34816741943359375,
+    "laplacian_variance": 37243.44921875,
+    "ssim_to_input": 0.4837004840373993,
+    "mse_to_input": 0.07686556875705719,
+    "psnr_to_input_db": 11.142681549633712,
+    "brightness_mean": 0.4345741271972656,
+    "ndvi_mae": 2.020531653101898e-08,
+    "ndvi_rmse": 2.823448319588806e-08,
+    "ndvi_corr": 0.9999999999999889,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 3.036377904663823e-08,
+    "ndwi_rmse": 3.98625239483863e-08,
+    "ndwi_corr": 0.9999999999999415,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0,
+    "param_a": 0.19587699177570816,
+    "param_b": 0.2153145171497248,
+    "param_c": 1.0,
+    "param_k": 1.0568776393279153,
+    "param_p": 0.436498001456541,
+    "pixel_equivalent_evaluations": 86.0
+  },
+  "parameters": {
+    "a": 0.19587699177570816,
+    "b": 0.2153145171497248,
+    "c": 1.0,
+    "k": 1.0568776393279153,
+    "p": 0.436498001456541
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.9455936722193407,
+      "best_stable_utility": 0.6959517122337586,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.7561632239914345,
+      "best_stable_utility": 0.7346498252831261,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.7513686449941731,
+      "best_stable_utility": 0.7346498252831261,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.6657444291674068,
+      "best_stable_utility": 0.7346498252831261,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.7405612132280656,
+      "best_stable_utility": 0.7394097457610733,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.7234255233900033,
+      "best_stable_utility": 0.740537304560004,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.8136191191160287,
+      "best_stable_utility": 0.740537304560004,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.7759097093921514,
+      "best_stable_utility": 0.740537304560004,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.7598843546440663,
+      "best_stable_utility": 0.740537304560004,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.7551616390143162,
+      "best_stable_utility": 0.740537304560004,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 11,
+      "best_qvis_generation": 0.6973692525255957,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 12,
+      "best_qvis_generation": 0.7521856320192809,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 13,
+      "best_qvis_generation": 0.6813028358106252,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 14,
+      "best_qvis_generation": 0.7289526586406558,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 15,
+      "best_qvis_generation": 0.832576717592235,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 16,
+      "best_qvis_generation": 0.6950017641555307,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 17,
+      "best_qvis_generation": 0.7215664778783868,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 18,
+      "best_qvis_generation": 0.6941666649673813,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 19,
+      "best_qvis_generation": 0.7102277679009392,
+      "best_stable_utility": 0.7410015052575811,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

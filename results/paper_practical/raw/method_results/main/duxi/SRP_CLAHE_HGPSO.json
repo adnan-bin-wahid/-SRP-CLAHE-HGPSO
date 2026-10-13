@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "duxi",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Porto Velho",
+    "datetime": "2020-09-12T14:35:14Z",
+    "cloud_fraction": 0.0,
+    "valid_fraction": 0.9980316162109375,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 4.018465099987225,
+    "peak_rss_mb": 243.08203125,
+    "evaluations_proxy": 160,
+    "evaluations_full": 10,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.8722187318501146,
+    "notes": "",
+    "entropy": 7.57112310122576,
+    "local_rms_contrast": 0.1405952274799347,
+    "edge_density": 0.3630039598208143,
+    "laplacian_variance": 10575.8232421875,
+    "ssim_to_input": 0.2374742329120636,
+    "mse_to_input": 0.11474815756082535,
+    "psnr_to_input_db": 9.402542789287457,
+    "brightness_mean": 0.46601322293281555,
+    "ndvi_mae": 2.509619116608519e-05,
+    "ndvi_rmse": 0.000533161626663059,
+    "ndvi_corr": 0.9999989198794276,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 4.768403232446872e-05,
+    "ndwi_rmse": 0.001035103457979858,
+    "ndwi_corr": 0.9999947356185215,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0021988037042319775,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0009335774458391304,
+    "param_a": 0.8723143159052335,
+    "param_b": 0.3109466390746007,
+    "param_c": 1.0,
+    "param_k": 0.8139056121704806,
+    "param_p": 0.49821259636127163,
+    "pixel_equivalent_evaluations": 50.0
+  },
+  "parameters": {
+    "a": 0.8723143159052335,
+    "b": 0.3109466390746007,
+    "c": 1.0,
+    "k": 0.8139056121704806,
+    "p": 0.49821259636127163
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.8858456437397725,
+      "best_stable_utility": 0.871970725010548,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8606605952523176,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.8684981385069719,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.8049657110865266,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.8274233819138757,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.7882833605799187,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.8058896555258561,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.8075824854097898,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.826169870103982,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.7524151353506797,
+      "best_stable_utility": 0.8731081787651112,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

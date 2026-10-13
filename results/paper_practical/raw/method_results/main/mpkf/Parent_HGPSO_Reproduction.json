@@ -1,0 +1,266 @@
+{
+  "record": {
+    "chip_id": "mpkf",
+    "method": "Parent_HGPSO_Reproduction",
+    "split": "test",
+    "location": "Rustenburg",
+    "datetime": "2020-07-28T08:27:26Z",
+    "cloud_fraction": 0.037006378173828125,
+    "valid_fraction": 0.9629936218261719,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 84.22924879999482,
+    "peak_rss_mb": 173.6328125,
+    "evaluations_proxy": 416,
+    "evaluations_full": 1,
+    "iterations_run": 26,
+    "stopped_early": true,
+    "feasible": null,
+    "violation": null,
+    "stable_visual_utility": 0.786451436800119,
+    "notes": "Independent parent-style reproduction; source paper implementation details are partially underspecified.",
+    "entropy": 7.921072546484819,
+    "local_rms_contrast": 0.2644893229007721,
+    "edge_density": 0.38034328541492535,
+    "laplacian_variance": 28406.458984375,
+    "ssim_to_input": 0.5645748376846313,
+    "mse_to_input": 0.056596577167510986,
+    "psnr_to_input_db": 12.472098331617666,
+    "brightness_mean": 0.5344036221504211,
+    "ndvi_mae": 0.11099445819854736,
+    "ndvi_rmse": 0.1620149463415146,
+    "ndvi_corr": 0.5028313386715036,
+    "ndvi_sign_flip_fraction": 0.04670361230059855,
+    "ndwi_mae": 0.10071572661399841,
+    "ndwi_rmse": 0.1549992561340332,
+    "ndwi_corr": 0.5703805430702439,
+    "ndwi_sign_flip_fraction": 0.015484683671165372,
+    "sam_mean_deg": 6.297700881958008,
+    "sam_median_deg": 5.0597076416015625,
+    "sam_p95_deg": 15.345165252685547,
+    "clip_fraction": 0.00010398386962601459,
+    "param_a": 0.2549572752620148,
+    "param_b": 0.29959672571549734,
+    "param_c": 1.0,
+    "param_k": 0.7086038759173423,
+    "param_p": 0.7418104503734311,
+    "pixel_equivalent_evaluations": 417.0
+  },
+  "parameters": {
+    "a": 0.2549572752620148,
+    "b": 0.29959672571549734,
+    "c": 1.0,
+    "k": 0.7086038759173423,
+    "p": 0.7418104503734311
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.8471818961298448,
+      "best_stable_utility": 0.7296654426210197,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8060709341548944,
+      "best_stable_utility": 0.7652107477797375,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.7703494381020964,
+      "best_stable_utility": 0.7652107477797375,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.7594348357566723,
+      "best_stable_utility": 0.7676186877861683,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.771246628592984,
+      "best_stable_utility": 0.7676186877861683,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.756539654212057,
+      "best_stable_utility": 0.7676186877861683,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.6848273569268888,
+      "best_stable_utility": 0.7676186877861683,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.8002619305184845,
+      "best_stable_utility": 0.7676186877861683,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.69825655203207,
+      "best_stable_utility": 0.7708053056845875,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.7486017330713666,
+      "best_stable_utility": 0.7708053056845875,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 11,
+      "best_qvis_generation": 0.7328898930350187,
+      "best_stable_utility": 0.7708053056845875,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 12,
+      "best_qvis_generation": 0.6830288056225078,
+      "best_stable_utility": 0.7820145009172483,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 13,
+      "best_qvis_generation": 0.5902004909305887,
+      "best_stable_utility": 0.7820145009172483,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 14,
+      "best_qvis_generation": 0.6992951493947002,
+      "best_stable_utility": 0.7823186947026096,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 15,
+      "best_qvis_generation": 0.6460560666494143,
+      "best_stable_utility": 0.7823186947026096,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 16,
+      "best_qvis_generation": 0.7918162406137256,
+      "best_stable_utility": 0.7826994088048598,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 17,
+      "best_qvis_generation": 0.7900971115903499,
+      "best_stable_utility": 0.7826994088048598,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 18,
+      "best_qvis_generation": 0.7755635546919616,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 19,
+      "best_qvis_generation": 0.6267305673602124,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 20,
+      "best_qvis_generation": 0.7328037226701386,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 21,
+      "best_qvis_generation": 0.6678337161327302,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 22,
+      "best_qvis_generation": 0.7119495568083168,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 23,
+      "best_qvis_generation": 0.7681696948815208,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 24,
+      "best_qvis_generation": 0.7179629192238253,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 25,
+      "best_qvis_generation": 0.8311232762287728,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 26,
+      "best_qvis_generation": 0.7773785255395791,
+      "best_stable_utility": 0.786451436800119,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "nbal__synthetic_mixed",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Macapa",
+    "datetime": "2020-09-10T13:52:40Z",
+    "cloud_fraction": 0.03873443603515625,
+    "valid_fraction": 0.9612655639648438,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 1.950473000004422,
+    "peak_rss_mb": 210.43359375,
+    "evaluations_proxy": 80,
+    "evaluations_full": 4,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.7678999044045657,
+    "notes": "",
+    "entropy": 7.6210653292608495,
+    "local_rms_contrast": 0.2252708226442337,
+    "edge_density": 0.37655065677209415,
+    "laplacian_variance": 54704.32421875,
+    "ssim_to_input": 0.5106306672096252,
+    "mse_to_input": 0.07304780185222626,
+    "psnr_to_input_db": 11.363928482828936,
+    "brightness_mean": 0.4952203035354614,
+    "ndvi_mae": 3.896255407198623e-08,
+    "ndvi_rmse": 5.476147535432574e-08,
+    "ndvi_corr": 0.9999999999999237,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 3.433734718782944e-08,
+    "ndwi_rmse": 4.8745917524684046e-08,
+    "ndwi_corr": 0.9999999999998943,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0,
+    "param_a": 0.1,
+    "param_b": 0.3512902631077579,
+    "param_c": 0.4249163057663316,
+    "param_k": 0.9176233711112581,
+    "param_p": 1.0193265848198896,
+    "pixel_equivalent_evaluations": 24.0
+  },
+  "parameters": {
+    "a": 0.1,
+    "b": 0.3512902631077579,
+    "c": 0.4249163057663316,
+    "k": 0.9176233711112581,
+    "p": 1.0193265848198896
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.9287036903185966,
+      "best_stable_utility": 0.7246500668592929,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8080603938428002,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.6899854127014615,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.6969391588127553,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.8563554795921824,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.6595207545766135,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.6762379372381737,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.7542396211207275,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.6883870980743328,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.6529805098364595,
+      "best_stable_utility": 0.7750111841735314,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

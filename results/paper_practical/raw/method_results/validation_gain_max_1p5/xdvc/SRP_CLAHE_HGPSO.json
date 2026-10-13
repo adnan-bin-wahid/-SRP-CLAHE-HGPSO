@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "xdvc",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "validation",
+    "location": "Georgetown",
+    "datetime": "2020-09-12T14:30:48Z",
+    "cloud_fraction": 0.009563446044921875,
+    "valid_fraction": 0.9904365539550781,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 1.784306599998672,
+    "peak_rss_mb": 277.87109375,
+    "evaluations_proxy": 80,
+    "evaluations_full": 3,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.7815133403401809,
+    "notes": "",
+    "entropy": 7.666512869470443,
+    "local_rms_contrast": 0.1813555359840393,
+    "edge_density": 0.3615432315116875,
+    "laplacian_variance": 13984.0419921875,
+    "ssim_to_input": 0.48913446068763733,
+    "mse_to_input": 0.03129085898399353,
+    "psnr_to_input_db": 15.045825146138593,
+    "brightness_mean": 0.6304030418395996,
+    "ndvi_mae": 1.6012940307064127e-08,
+    "ndvi_rmse": 2.1286668427933364e-08,
+    "ndvi_corr": 0.9999999999999937,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 1.5862456237414335e-08,
+    "ndwi_rmse": 2.1065863720082234e-08,
+    "ndwi_corr": 0.999999999999993,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0,
+    "param_a": 1.0087691883561425,
+    "param_b": 0.2031566687179286,
+    "param_c": 0.7693316888264364,
+    "param_k": 0.9986416696490115,
+    "param_p": 0.7170939950827059,
+    "pixel_equivalent_evaluations": 23.0
+  },
+  "parameters": {
+    "a": 1.0087691883561425,
+    "b": 0.2031566687179286,
+    "c": 0.7693316888264364,
+    "k": 0.9986416696490115,
+    "p": 0.7170939950827059
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.9023112236500185,
+      "best_stable_utility": 0.806053482218513,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8943468078970909,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.8869006911169197,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.8445592707358599,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.8601203090530074,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.8715862771515072,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.8094134360472733,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.8407735062689251,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.6847927826463864,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.6871800587813217,
+      "best_stable_utility": 0.8545363529242654,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

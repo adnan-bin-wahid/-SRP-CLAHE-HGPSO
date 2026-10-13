@@ -1,0 +1,21 @@
+You may either:
+1) copy/extract SRP_Sentinel2_Final_240 into this data folder, OR
+2) keep it anywhere and pass its path to the BAT/Python command.
+
+Expected structure:
+SRP_Sentinel2_Final_240/
+  dataset_manifest.csv
+  validation/
+    <chip_id>/
+      B02.tif
+      B03.tif
+      B04.tif
+      B08.tif
+      cloud_mask.tif
+  test/
+    <chip_id>/
+      B02.tif
+      B03.tif
+      B04.tif
+      B08.tif
+      cloud_mask.tif

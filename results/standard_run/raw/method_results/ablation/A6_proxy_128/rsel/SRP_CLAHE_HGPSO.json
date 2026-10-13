@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "rsel",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Malabo",
+    "datetime": "2020-09-06T10:00:03Z",
+    "cloud_fraction": 0.03211212158203125,
+    "valid_fraction": 0.9678878784179688,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 1.3067710000032093,
+    "peak_rss_mb": 207.5859375,
+    "evaluations_proxy": 80,
+    "evaluations_full": 4,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.6189163725164488,
+    "notes": "",
+    "entropy": 6.163777953266128,
+    "local_rms_contrast": 0.32588234543800354,
+    "edge_density": 0.36996208508390943,
+    "laplacian_variance": 70504.046875,
+    "ssim_to_input": 0.744021475315094,
+    "mse_to_input": 0.05230532959103584,
+    "psnr_to_input_db": 12.814540569443642,
+    "brightness_mean": 0.3320198357105255,
+    "ndvi_mae": 1.415678330118908e-08,
+    "ndvi_rmse": 1.8016990566138702e-08,
+    "ndvi_corr": 0.9999999999999688,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 1.528615989343507e-08,
+    "ndwi_rmse": 1.904857604984045e-08,
+    "ndwi_corr": 0.9999999999999064,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0,
+    "param_a": 0.2649247888605682,
+    "param_b": 0.31062325031080323,
+    "param_c": 0.5955673892436324,
+    "param_k": 0.7922677382615045,
+    "param_p": 1.0297466400125044,
+    "pixel_equivalent_evaluations": 9.0
+  },
+  "parameters": {
+    "a": 0.2649247888605682,
+    "b": 0.31062325031080323,
+    "c": 0.5955673892436324,
+    "k": 0.7922677382615045,
+    "p": 1.0297466400125044
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.7785158474103964,
+      "best_stable_utility": 0.7541267681535488,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.8682397609832452,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.7646972533428497,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.796442704457831,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.671093790842955,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.8731919916198444,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.770287906601465,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.615134090157389,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.8077544967233001,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.7008907724485204,
+      "best_stable_utility": 0.7614002814710706,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

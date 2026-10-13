@@ -1,0 +1,16 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Selected sensitivity runs: means over eight chips. Different seed tags across variants confound setting and search randomness; these are descriptive comparisons.}
+\label{tab:ablation}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Setting & Contrast & NDVI MAE & Time (s) \\\midrule
+Without constraints & 0.2370 & $8.07\times10^{-8}$ & 2.182 \\
+Smoothing $\sigma=0$ & 0.2584 & $8.21\times10^{-8}$ & 2.166 \\
+Smoothing $\sigma=1$ & 0.1984 & $4.02\times10^{-8}$ & 2.601 \\
+Smoothing $\sigma=2$ & 0.1354 & $3.40\times10^{-8}$ & 2.560 \\
+Gain $[0.4,2.5]$ & 0.2171 & $8.39\times10^{-6}$ & 2.387 \\
+Gain $[0.5,2.0]$ & 0.2271 & $7.72\times10^{-8}$ & 2.328 \\
+Gain $[0.7,1.5]$ & 0.2267 & $3.35\times10^{-8}$ & 2.368 \\
+Proxy $128\times128$ & 0.2550 & $7.88\times10^{-8}$ & 0.904 \\
+Proxy $256\times256$ & 0.2401 & $8.10\times10^{-8}$ & 2.215 \\
+Proxy $512\times512$ & 0.2127 & $7.30\times10^{-8}$ & 11.361 \\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,59 @@
+{
+  "project": "SRP-CLAHE-HGPSO",
+  "preset": "quick",
+  "started_unix": 1786990984.9692078,
+  "dataset_root": "E:\\IIT\\8th_semester\\image\\SRP_CLAHE_HGPSO_Paper_Experiment_Suite_v1_2\\SRP_CLAHE_HGPSO_Paper_Experiment_Suite_v1_2\\data\\demo_dataset",
+  "validation_images_available": 4,
+  "test_images_used": 3,
+  "environment": {
+    "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 16,
+    "physical_cpu_count": 10,
+    "cpu_max_mhz": 2500.0,
+    "ram_gb": 15.773,
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.0",
+      "pandas": "2.3.3",
+      "opencv-python": "4.14.0.94",
+      "scikit-image": "0.26.0",
+      "matplotlib": "3.11.1",
+      "rasterio": "1.5.1",
+      "psutil": "7.2.2",
+      "PyYAML": "6.0.3",
+      "Pillow": "11.3.0",
+      "tqdm": "4.70.0"
+    }
+  },
+  "git_commit": null,
+  "dataset_adaptation": "Radiant Earth Sentinel-2 L2A 512x512 B02/B03/B04/B08 chips with expert cloud_mask.tif; cloud mask is used instead of SCL.",
+  "finished_unix": 1786990988.0127838,
+  "frozen_config": {
+    "display_percentiles": [
+      2.0,
+      98.0
+    ],
+    "clahe_clip_limit": 0.01,
+    "clahe_tile_grid": [
+      8,
+      8
+    ],
+    "local_window": 15,
+    "transform_g": 1.0,
+    "transform_l": 1.0,
+    "transform_rescale_percentiles": [
+      1.0,
+      99.0
+    ],
+    "epsilon": 0.0001,
+    "gain_min": 0.5,
+    "gain_max": 1.5,
+    "gain_sigma": 0.0,
+    "baseline_gain_min": 0.05,
+    "baseline_gain_max": 20.0
+  },
+  "warnings": []
+}

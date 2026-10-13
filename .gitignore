@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/SRP_Sentinel2_Final_240/
+
+# Local compiler and intermediate LaTeX output; final paper artifacts are tracked.
+paper/build/
+paper/build-tools/
+paper/tectonic-portable.zip
+
+# Local credentials and editor state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.idea/
+.vscode/

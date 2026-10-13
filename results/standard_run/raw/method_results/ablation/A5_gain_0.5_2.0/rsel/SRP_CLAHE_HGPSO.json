@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "rsel",
+    "method": "SRP_CLAHE_HGPSO",
+    "split": "test",
+    "location": "Malabo",
+    "datetime": "2020-09-06T10:00:03Z",
+    "cloud_fraction": 0.03211212158203125,
+    "valid_fraction": 0.9678878784179688,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 3.301177399996959,
+    "peak_rss_mb": 215.61328125,
+    "evaluations_proxy": 80,
+    "evaluations_full": 4,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": true,
+    "violation": 0.0,
+    "stable_visual_utility": 0.665023915028738,
+    "notes": "",
+    "entropy": 6.162226779539502,
+    "local_rms_contrast": 0.374778687953949,
+    "edge_density": 0.382928828736511,
+    "laplacian_variance": 102305.2734375,
+    "ssim_to_input": 0.7160091996192932,
+    "mse_to_input": 0.0560796782374382,
+    "psnr_to_input_db": 12.511944868407195,
+    "brightness_mean": 0.5148448944091797,
+    "ndvi_mae": 1.3462523540397342e-08,
+    "ndvi_rmse": 1.7134613727876058e-08,
+    "ndvi_corr": 0.9999999999999744,
+    "ndvi_sign_flip_fraction": 0.0,
+    "ndwi_mae": 1.51279628823886e-08,
+    "ndwi_rmse": 1.8685135216855997e-08,
+    "ndwi_corr": 0.9999999999999093,
+    "ndwi_sign_flip_fraction": 0.0,
+    "sam_mean_deg": 0.0,
+    "sam_median_deg": 0.0,
+    "sam_p95_deg": 0.0,
+    "clip_fraction": 0.0,
+    "param_a": 0.3327781074976253,
+    "param_b": 0.25797128020926574,
+    "param_c": 0.6541542722107857,
+    "param_k": 0.9027348228473185,
+    "param_p": 0.6215577566305343,
+    "pixel_equivalent_evaluations": 24.0
+  },
+  "parameters": {
+    "a": 0.3327781074976253,
+    "b": 0.25797128020926574,
+    "c": 0.6541542722107857,
+    "k": 0.9027348228473185,
+    "p": 0.6215577566305343
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.5903317552531108,
+      "best_stable_utility": 0.7299695743324133,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.6430749729311022,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.8149322432556871,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.6514119423204315,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.6784307613808516,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.6304026098475263,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.7882769884547307,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.6146778943574139,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.6636847883462905,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.6428043846189406,
+      "best_stable_utility": 0.7517583073168034,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

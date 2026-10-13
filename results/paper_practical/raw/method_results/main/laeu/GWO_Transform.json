@@ -1,0 +1,138 @@
+{
+  "record": {
+    "chip_id": "laeu",
+    "method": "GWO_Transform",
+    "split": "test",
+    "location": "Kalamie",
+    "datetime": "2020-07-11T08:31:54Z",
+    "cloud_fraction": 0.00286865234375,
+    "valid_fraction": 0.99713134765625,
+    "height": 512,
+    "width": 512,
+    "runtime_sec": 28.100950699998066,
+    "peak_rss_mb": 178.11328125,
+    "evaluations_proxy": 160,
+    "evaluations_full": 1,
+    "iterations_run": 10,
+    "stopped_early": true,
+    "feasible": null,
+    "violation": null,
+    "stable_visual_utility": 0.7376177176617917,
+    "notes": "",
+    "entropy": 6.781949328869494,
+    "local_rms_contrast": 0.3652465045452118,
+    "edge_density": 0.37573452898328946,
+    "laplacian_variance": 120137.7734375,
+    "ssim_to_input": 0.49384838342666626,
+    "mse_to_input": 0.10404916852712631,
+    "psnr_to_input_db": 9.827613859523419,
+    "brightness_mean": 0.48630574345588684,
+    "ndvi_mae": 0.1640133112668991,
+    "ndvi_rmse": 0.22852610051631927,
+    "ndvi_corr": 0.4848423334465792,
+    "ndvi_sign_flip_fraction": 0.3278332925261676,
+    "ndwi_mae": 0.1537778079509735,
+    "ndwi_rmse": 0.22106143832206726,
+    "ndwi_corr": 0.4247673741147893,
+    "ndwi_sign_flip_fraction": 0.1546106996388566,
+    "sam_mean_deg": 6.289820671081543,
+    "sam_median_deg": 3.2422261238098145,
+    "sam_p95_deg": 20.0142822265625,
+    "clip_fraction": 0.0,
+    "param_a": 0.5755274133001629,
+    "param_b": 0.1,
+    "param_c": 0.8527424478403525,
+    "param_k": 0.5,
+    "param_p": 0.34776835495875486,
+    "pixel_equivalent_evaluations": 161.0
+  },
+  "parameters": {
+    "a": 0.5755274133001629,
+    "b": 0.1,
+    "c": 0.8527424478403525,
+    "k": 0.5,
+    "p": 0.34776835495875486
+  },
+  "history": [
+    {
+      "generation": 1,
+      "best_qvis_generation": 0.7297328233988601,
+      "best_stable_utility": 0.7283981322630969,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 2,
+      "best_qvis_generation": 0.7806122425119831,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 3,
+      "best_qvis_generation": 0.7588789292971753,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 4,
+      "best_qvis_generation": 0.7052640636290433,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 5,
+      "best_qvis_generation": 0.7069535976485618,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 6,
+      "best_qvis_generation": 0.6898103760587218,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 7,
+      "best_qvis_generation": 0.7679691854004452,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 8,
+      "best_qvis_generation": 0.7096023846177356,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 9,
+      "best_qvis_generation": 0.7430303424584068,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    },
+    {
+      "generation": 10,
+      "best_qvis_generation": 0.7076351016669662,
+      "best_stable_utility": 0.7376177176617917,
+      "best_feasible": true,
+      "best_violation": 0.0,
+      "feasible_fraction": 1.0
+    }
+  ]
+}

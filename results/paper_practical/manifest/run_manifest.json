@@ -1,0 +1,33 @@
+{
+  "project": "SRP-CLAHE-HGPSO",
+  "preset": "paper_practical",
+  "started_unix": 1786996355.21477,
+  "dataset_root": "E:\\IIT\\8th_semester\\image\\SRP_Sentinel2_Final_240\\SRP_Sentinel2_Final_240",
+  "validation_images_available": 40,
+  "test_images_used": 200,
+  "environment": {
+    "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 16,
+    "physical_cpu_count": 10,
+    "cpu_max_mhz": 2500.0,
+    "ram_gb": 15.773,
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.0",
+      "pandas": "2.3.3",
+      "opencv-python": "4.14.0.94",
+      "scikit-image": "0.26.0",
+      "matplotlib": "3.11.1",
+      "rasterio": "1.5.1",
+      "psutil": "7.2.2",
+      "PyYAML": "6.0.3",
+      "Pillow": "11.3.0",
+      "tqdm": "4.70.0"
+    }
+  },
+  "git_commit": null,
+  "dataset_adaptation": "Radiant Earth Sentinel-2 L2A 512x512 B02/B03/B04/B08 chips with expert cloud_mask.tif; cloud mask is used instead of SCL."
+}
