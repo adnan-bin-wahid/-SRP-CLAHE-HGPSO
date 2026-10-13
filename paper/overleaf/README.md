@@ -7,7 +7,9 @@ Select **main.tex** as the main document and **pdfLaTeX** as the compiler.
 Overleaf runs the required BibTeX steps automatically. Recompile from scratch
 if citations initially appear unresolved.
 
-The package uses the standard IEEEtran journal class with two columns.
+The package uses the standard IEEEtran conference class with two columns.
+Four side-by-side author blocks each display the author's name, institute,
+university, location, and individual email on the first page.
 All figures, bibliography entries, and generated tables are local to the
 package; no absolute paths or shell-escape features are required.
 The supplied local PDF is 9 pages including references and floats, within

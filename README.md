@@ -1,6 +1,6 @@
 # SRP-CLAHE-HGPSO
 
-Paper experiment suite and evidence-grounded IEEE-style manuscript.
+Paper experiment suite and evidence-grounded IEEE conference-style manuscript.
 
 ## Completed Paper
 

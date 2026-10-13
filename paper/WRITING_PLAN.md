@@ -12,7 +12,8 @@ not a finished manuscript or new enhancement experiments.
   tables, and any appendix included in that PDF.
 - Layout: two columns on each page, with a full-width title and selected
   full-width figures or tables where necessary.
-- Initial layout: IEEEtran journal mode, pending selection of a target venue.
+- Current layout: IEEEtran conference mode, with four side-by-side author
+  blocks, each showing the affiliation and individual email beneath the name.
   Replace this with the venue's official template before submission.
 - Evidence source: the completed `results/standard_run` experiment.
 - Working target: 9.5 pages, leaving 0.5 page for layout adjustments.

@@ -5,11 +5,14 @@ Verified on October 13, 2026.
 ## Build and Layout
 
 - The complete manuscript compiles to **9 pages**, including references,
-  figures, and tables, using the standard two-column IEEEtran journal class.
+  figures, and tables, using the standard two-column IEEEtran conference class.
 - Local compilation used Tectonic 0.17.0 (XeTeX). A remote Overleaf build
   and a local pdfLaTeX build were not executed. The recommended Overleaf
   configuration is main.tex with pdfLaTeX.
-- All four supplied author names and emails are present in the PDF.
+- All four supplied author names and emails appear on the first page.
+  Four side-by-side conference-style author blocks each display the institute,
+  university, location, and individual email beneath the author's name.
+  Their alignment, order, and nonoverlapping name/email bounds are checked.
 - All 17 bibliography entries are cited; the build has no unresolved
   citations/references or horizontal overfull boxes.
 - All fonts are embedded. No replacement glyphs or words outside page

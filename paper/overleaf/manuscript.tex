@@ -1,4 +1,4 @@
-\documentclass[journal]{IEEEtran}
+\documentclass[conference]{IEEEtran}
 \usepackage[T1]{fontenc}
 \usepackage{cite}
 \usepackage{amsmath,amssymb}
@@ -15,14 +15,33 @@
 \newcommand{\sgn}{\operatorname{sgn}}
 
 \title{Spectral-Ratio-Preserving CLAHE-HGPSO Enhancement of Four-Band Sentinel-2 Images}
-\author{Sumaiya~Farhana~Islam, Adnan~Bin~Wahid, Redowan~Billah~Sami,
-and Md.~Touhidur~Rahman%
-\thanks{\raggedright All authors are with the Institute of Information Technology,
-University of Dhaka, Dhaka, Bangladesh.
-E-mail: \texttt{bsse1450@iit.du.ac.bd} (S. F. Islam),
-\texttt{bsse1442@iit.du.ac.bd} (A. B. Wahid),
-\texttt{bsse1409@iit.du.ac.bd} (R. B. Sami), and
-\texttt{bsse1432@iit.du.ac.bd} (M. T. Rahman).}}
+\author{\IEEEauthorblockN{Sumaiya~Farhana~Islam}
+\IEEEauthorblockA{Institute of Information\\
+Technology\\
+University of Dhaka\\
+Dhaka, Bangladesh\\
+bsse1450@iit.du.ac.bd}
+\and
+\IEEEauthorblockN{Adnan~Bin~Wahid}
+\IEEEauthorblockA{Institute of Information\\
+Technology\\
+University of Dhaka\\
+Dhaka, Bangladesh\\
+bsse1442@iit.du.ac.bd}
+\and
+\IEEEauthorblockN{Redowan~Billah~Sami}
+\IEEEauthorblockA{Institute of Information\\
+Technology\\
+University of Dhaka\\
+Dhaka, Bangladesh\\
+bsse1409@iit.du.ac.bd}
+\and
+\IEEEauthorblockN{Md.~Touhidur~Rahman}
+\IEEEauthorblockA{Institute of Information\\
+Technology\\
+University of Dhaka\\
+Dhaka, Bangladesh\\
+bsse1432@iit.du.ac.bd}}
 
 \begin{document}
 \maketitle
@@ -37,7 +56,7 @@ Multispectral image enhancement, Sentinel-2, contrast-limited adaptive histogram
 
 \section{Introduction}
 \label{sec:introduction}
-\IEEEPARstart{M}{ultispectral} satellite images serve both visual interpretation and quantitative analysis. Improving the appearance of a dark or low-contrast display does not necessarily preserve relationships among the underlying bands. This distinction matters when visible and near-infrared (NIR) values are subsequently used in normalized-difference indices. The normalized difference vegetation index (NDVI) compares red and NIR signals, while the green--NIR normalized difference water index (NDWI) emphasizes a different relationship \cite{rouse1974,mcfeeters1996}. Enhancing visible bands while leaving NIR unchanged can therefore change these indices even when the display becomes more distinctive.
+Multispectral satellite images serve both visual interpretation and quantitative analysis. Improving the appearance of a dark or low-contrast display does not necessarily preserve relationships among the underlying bands. This distinction matters when visible and near-infrared (NIR) values are subsequently used in normalized-difference indices. The normalized difference vegetation index (NDVI) compares red and NIR signals, while the green--NIR normalized difference water index (NDWI) emphasizes a different relationship \cite{rouse1974,mcfeeters1996}. Enhancing visible bands while leaving NIR unchanged can therefore change these indices even when the display becomes more distinctive.
 
 Histogram equalization (HE), contrast-limited adaptive histogram equalization (CLAHE), and adaptive gamma correction with weighting distribution (AGCWD) provide established intensity-enhancement strategies \cite{pizer1987,huang2013}. Image-specific optimization can additionally tune a local transformation. Rentapalli and Khairuzzaman combine CLAHE with hybrid grey-wolf and particle-swarm optimization (HGPSO) for satellite-image enhancement \cite{rentapalli2026}. Such methods motivate a practical question: can optimized display contrast be increased without unnecessary distortion of four-band spectral shape, and at what computational cost?
 
@@ -317,7 +336,7 @@ On 200 Sentinel-2 chips, a four-band shared-gain CLAHE-HGPSO adaptation increase
 \section*{Data and Code Availability}
 The source dataset is identified by DOI \url{10.34911/rdnt.hfq6m7} under CC BY 4.0 \cite{radiant2022}. The accompanying source package contains result tables, statistical audits, figure-selection provenance, and archived metrics/manifests. A public archive of the full experiment suite has not been established; no unavailable repository link is claimed.
 
-\IEEEtriggeratref{12}
+\IEEEtriggeratref{7}
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 \end{document}
